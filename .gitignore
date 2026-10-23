@@ -1,0 +1,12 @@
+# Raw Météo-France files (1.2 GB): download them again with "python download_data.py"
+data/raw/
+
+# The small processed files in data/processed/ ARE committed: the app needs them to run
+
+# Python and Jupyter files
+__pycache__/
+.venv/
+.ipynb_checkpoints/
+
+# Project instructions from the professor
+*.pdf
