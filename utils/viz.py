@@ -22,6 +22,8 @@ def stations_map(stations):
         color_continuous_scale="Viridis",
         # Built-in OpenStreetMap background (the default one stays empty on Streamlit Cloud)
         map_style="open-street-map",
+        # Center of the stations (between Biarritz and Cap Béar), otherwise the map opens at lat 0 / lon 0
+        center={"lat": 43.0, "lon": 0.7},
         zoom=6.5,
         height=550,
     )
@@ -47,6 +49,8 @@ def hot_days_map(table):
         color_continuous_scale="YlOrRd",
         # Built-in OpenStreetMap background (the default one stays empty on Streamlit Cloud)
         map_style="open-street-map",
+        # Center of the stations (between Biarritz and Cap Béar), otherwise the map opens at lat 0 / lon 0
+        center={"lat": 43.0, "lon": 0.7},
         zoom=6.5,
         height=550,
     )

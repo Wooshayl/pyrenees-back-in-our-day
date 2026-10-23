@@ -1,4 +1,6 @@
 import streamlit as st
+# To run a small piece of JavaScript (scroll back to the top of the page)
+import streamlit.components.v1 as components
 
 # Import one file per page of the story
 from sections import (
@@ -60,6 +62,19 @@ st.sidebar.title('"Back in our day…"')
 chapter = st.sidebar.radio("Chapters", CHAPTERS, key="chapter")
 # Small grey text with the source of the data
 st.sidebar.caption(SOURCE)
+
+# Go back to the top of the page when the chapter changes.
+# The chapter name is written in the script, so the script is new (and runs again)
+# only when the chapter changes, not at every click on a slider.
+components.html(
+    f"""
+    <script>
+        // chapter: {chapter}
+        window.parent.document.querySelector('[data-testid="stMain"]').scrollTo(0, 0);
+    </script>
+    """,
+    height=0,
+)
 
 # Show the page that matches the chapter chosen in the sidebar
 if chapter == "Prologue: Back in our day…":
