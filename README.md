@@ -59,7 +59,7 @@ images/              Efrei logo
 
 ## Limits
 
-- The data is raw, not homogenised: some stations moved or changed sensors (for example Aulus-les-Bains around 1985).
+- The data is raw, not homogenised: some stations moved or changed sensors (Aulus-les-Bains around 1985).
 - Stations open and close: a year only counts if it has at least 330 days of measures (a winter: 110 days).
 - The forecast is a simple linear regression: it is not a climate model, and a local trend does not prove anything
   about the global climate.
