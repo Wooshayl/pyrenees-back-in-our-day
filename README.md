@@ -13,6 +13,8 @@ and a simple machine learning forecast for 2050 and 2100.
 
 **Live app:** https://pyrenees-back-in-our-day-uc8hbxj8yymohmlsijzh2q.streamlit.app/
 
+Note: the maps (chapters 1 and 2) stay empty on the online version. They work when the app is run locally.
+
 ## Data
 
 - **Source:** Météo-France, *Données climatologiques de base - quotidiennes*, on data.gouv.fr:
