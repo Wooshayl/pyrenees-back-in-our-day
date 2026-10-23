@@ -11,6 +11,8 @@ and a simple machine learning forecast for 2050 and 2100.
 
 **Course:** Data Analysis and Visualization, Mano Joseph Mathew
 
+**Live app:** https://pyrenees-back-in-our-day-uc8hbxj8yymohmlsijzh2q.streamlit.app/
+
 ## Data
 
 - **Source:** Météo-France, *Données climatologiques de base - quotidiennes*, on data.gouv.fr:
@@ -21,6 +23,8 @@ and a simple machine learning forecast for 2050 and 2100.
   (Ministry of Ecological Transition, 2025).
 
 ## How to run the app
+
+Tested with Python 3.12 (on Streamlit Community Cloud, choose Python 3.12 in "Advanced settings").
 
 ```
 pip install -r requirements.txt

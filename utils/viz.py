@@ -20,6 +20,8 @@ def stations_map(stations):
         hover_data={"altitude": True, "first_year": True, "last_year": True, "lat": False, "lon": False},
         labels={"altitude": "Altitude (m)", "first_year": "First year", "last_year": "Last year"},
         color_continuous_scale="Viridis",
+        # Built-in OpenStreetMap background (the default one stays empty on Streamlit Cloud)
+        map_style="open-street-map",
         zoom=6.5,
         height=550,
     )
@@ -43,6 +45,8 @@ def hot_days_map(table):
             "altitude": "Altitude (m)",
         },
         color_continuous_scale="YlOrRd",
+        # Built-in OpenStreetMap background (the default one stays empty on Streamlit Cloud)
+        map_style="open-street-map",
         zoom=6.5,
         height=550,
     )
